@@ -4,40 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Jannis Jehle">
     <meta name="generator" content="Hugo 0.98.0">
-    <title>Jumbotron example · Bootstrap v5.2</title>
+    <title>HGW Hofbier - Home</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
 
     
-
     
 
-<script type="text/javascript" src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
-  rel="stylesheet"
-/>
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
-></script>
+    <script type="text/javascript" src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+    ></script>
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <!-- Style -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -89,6 +90,10 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .white {
+        color:white
+      } 
     </style>
 
     
@@ -102,7 +107,9 @@
           <div class="container-fluid">
             <a class="navbar-brand" href="#">HGW Hofbier</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+              </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
@@ -119,10 +126,10 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Altenheim
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="./altenheim/2022/index.html">2022</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item text-white" href="./altenheim/2022/index.html">2022</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
                   </ul>
                 </li>
               </ul>
@@ -160,7 +167,7 @@
     </div>
 
     <footer class="pt-3 mt-4 text-muted border-top">
-      &copy; 2022
+      &copy; HGW Hofbier 2022
     </footer>
   </div>
 </main>

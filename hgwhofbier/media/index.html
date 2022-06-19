@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.98.0">
-    <title>Jumbotron example · Bootstrap v5.2</title>
+    <title>HGW Hofbier - Media</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
 
@@ -32,7 +32,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
     ></script>
     
-    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -87,6 +87,11 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .altenheim {  background: no-repeat center center ; 
+        background-size: fill;
+      }
+    
     </style>
 
     
@@ -129,68 +134,73 @@
       </nav>
     </header>
 
-    <div class="p-1 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Beach Turnier Altenheim</h1>
-        <p class="col-md-8 fs-4">Gruppenphase:</p>
-        <table class="table table-dark table-striped table-hover">
-          <thead color="red">
-            <tr>
-              <th scope="col">Mannschaft</th>
-              <th scope="col">Spiele</th>
-              <th scope="col">S</th>
-              <th scope="col">N</th>
-              <th scope="col">Sätze</th>
-              <th scope="col">Diff</th>
-              <th scope="col">Tore</th>
-              <th scope="col">Punkte</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><i class="flag flag-de"></i>HGW Hofbier</th>
-              <td>3</td>
-              <td>3</td>
-              <td>0</td>
-              <td>3 - 0</td>
-              <td>+3</td>
-              <td>53-36(+17)</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td scope="row"><i class="flag flag-de"></i>T-TVO</th>
-              <td>3</td>
-              <td>2</td>
-              <td>1</td>
-              <td>2 - 1</td>
-              <td>+1</td>
-              <td>52-36(+16)</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td scope="row"><i class="flag flag-de"></i>Kräscheis</th>
-              <td>3</td>
-              <td>1</td>
-              <td>2</td>
-              <td>2 - 3</td>
-              <td>-1</td>
-              <td>34-58(-24)</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td scope="row"><i class="flag flag-de"></i>Barhogga</th>
-              <td>3</td>
-              <td>0</td>
-              <td>3</td>
-              <td>1 - 4</td>
-              <td>-3</td>
-              <td>37-46(-9)</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h1 class="pb-2 border-bottom">Media</h1>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg altenheim" style="background-image: url('../assets/bilder/altenheim/2022/cover.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+              <a href="./altenheim/index.html" class=" stretched-link"></a>
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Altenheim</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="../assets/bilder/altenheim/2022/logo.jpg  " alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Altenheim</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>15.06. - 19.06.2022</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  <!--
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>-->
       </div>
     </div>
 
